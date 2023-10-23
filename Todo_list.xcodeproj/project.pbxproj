@@ -22,7 +22,6 @@
 		126545E82ADD0FA9006A0573 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126545E72ADD0FA9006A0573 /* SideMenuView.swift */; };
 		126545EA2ADD1725006A0573 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126545E92ADD1725006A0573 /* LoginView.swift */; };
 		126545EC2ADD1955006A0573 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126545EB2ADD1955006A0573 /* User.swift */; };
-		12D499CE2AE62113000422D9 /* generate_swifttlint_filelist.sh in Resources */ = {isa = PBXBuildFile; fileRef = 12D499CC2AE62104000422D9 /* generate_swifttlint_filelist.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +62,6 @@
 		126545E72ADD0FA9006A0573 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		126545E92ADD1725006A0573 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		126545EB2ADD1955006A0573 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		12D499CC2AE62104000422D9 /* generate_swifttlint_filelist.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generate_swifttlint_filelist.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +92,6 @@
 		1265459F2AD7E777006A0573 = {
 			isa = PBXGroup;
 			children = (
-				12D499CC2AE62104000422D9 /* generate_swifttlint_filelist.sh */,
 				126545AA2AD7E778006A0573 /* Todo_list */,
 				126545BF2AD7E778006A0573 /* Todo_listTests */,
 				126545C92AD7E779006A0573 /* Todo_listUITests */,
@@ -312,7 +309,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				126545B52AD7E778006A0573 /* Preview Assets.xcassets in Resources */,
-				12D499CE2AE62113000422D9 /* generate_swifttlint_filelist.sh in Resources */,
 				126545B22AD7E778006A0573 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,13 +336,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/build/build_phases/SwiftLintBuildPhase.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = Swiftlint;
 			outputFileListPaths = (
-				"$(SRCROOT)/build/build_phases/SwiftLintBuildPhase_swiftlint_static_output",
 			);
 			outputPaths = (
 			);

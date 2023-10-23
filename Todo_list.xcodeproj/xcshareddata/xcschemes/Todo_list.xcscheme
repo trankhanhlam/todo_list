@@ -5,24 +5,6 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      <PreActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;cd $SOURCE_ROOT&#10;${SOURCE_ROOT}/generate_swifttlint_filelist.sh&#10;">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "126545A72AD7E778006A0573"
-                     BuildableName = "Todo_list.app"
-                     BlueprintName = "Todo_list"
-                     ReferencedContainer = "container:Todo_list.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
-            </ActionContent>
-         </ExecutionAction>
-      </PreActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
