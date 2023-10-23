@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct SideMenuView: View {
-    
+
     @Binding var isShowSideMenu: Bool
     var syncTask: (() -> Void)
-    
+
     var sideBarWidth = UIScreen.main.bounds.size.width * 0.4
     var bgColor: Color = Color(.init(red: 43 / 255, green: 49 / 255, blue: 51 / 255, alpha: 1))
-    
+
     var body: some View {
         if isShowSideMenu {
             ZStack {
@@ -32,14 +32,14 @@ struct SideMenuView: View {
             .edgesIgnoringSafeArea(.all)
         }
     }
-    
+
     var content: some View {
         HStack(alignment: .top) {
             ZStack(alignment: .top, content: {
                 bgColor
                 VStack {
                     Button("Login") {
-                        
+
                     }
                     Spacer()
                     Button("Sync task", action: syncTask)

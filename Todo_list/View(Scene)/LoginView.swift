@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
-    
+
     @State private var userName = ""
     @State private var passWord = ""
-    
+
     var body: some View {
         VStack {
             TextField("Username", text: $userName)
@@ -24,9 +24,9 @@ struct LoginView: View {
         .textFieldStyle(.roundedBorder)
         Spacer()
     }
-    
+
     private func login() {
-        
+
     }
 }
 

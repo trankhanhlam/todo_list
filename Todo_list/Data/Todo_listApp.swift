@@ -12,7 +12,7 @@ import SwiftData
 struct TodoListApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            ItemEntity.self,
+            ItemEntity.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

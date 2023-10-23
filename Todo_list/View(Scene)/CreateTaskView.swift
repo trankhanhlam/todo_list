@@ -43,7 +43,7 @@ struct CreateTaskView: View {
             })
         }
     }
-    
+
     private func saveTask() {
         let newItem = ItemEntity(timestamp: Date())
         newItem.id = Int.random(in: 0...Int.max)

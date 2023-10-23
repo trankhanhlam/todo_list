@@ -10,10 +10,10 @@ import SwiftData
 
 struct HomeView: View {
     @ObservedObject private var homeViewModel = HomeViewModel()
-    
+
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [ItemEntity]
-    
+
     @State private var showNewTask = false
     @State private var isShowSideMenu = false
     @State private var syncTask: (() -> Void) = { }
@@ -58,7 +58,7 @@ struct HomeView: View {
             }
         })
     }
-    
+
     private func showSideMenu() {
         isShowSideMenu.toggle()
     }
@@ -66,7 +66,7 @@ struct HomeView: View {
     private func addItem() {
         showNewTask = true
     }
-    
+
     private func syncTaskfromSever() {
         let itemsLocal = items.map { $0.covertToItem() }
         Task {
